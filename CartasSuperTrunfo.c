@@ -8,16 +8,19 @@
 
 int main() {
 
-    char Estado [1];
-    char Código_Carta [4];
+    char Estado;
+    char Codigo_Carta [4];
     char Nome_Cidade [20];
     int Populacao;
     float Area;
     float PIB;
     int Ponto_Turistico;
 
+    printf("Digite uma letra de  A a H para representar o Estado:\n");
+    scanf("%c", &Estado);
+    printf("Seu estado é: %c", Estado);
 
-    
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
