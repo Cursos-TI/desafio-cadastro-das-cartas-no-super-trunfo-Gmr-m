@@ -9,8 +9,8 @@
 int main() {
 
     char Estado;
-    char Codigo_Carta [4];
-    char Nome_Cidade [20];
+    char Codigo_Carta;
+    char Nome_Cidade[20];
     int Populacao;
     float Area;
     float PIB;
@@ -18,7 +18,15 @@ int main() {
 
     printf("Digite uma letra de  A a H para representar o Estado:\n");
     scanf("%c", &Estado);
-    printf("Seu estado é: %c", Estado);
+    printf("Escolha um número de 1 a 4 para o código da carta:\n");
+    scanf(" %c", &Codigo_Carta);
+    printf("Digite o nome da Cidade:\n");
+    scanf(" %s", &Nome_Cidade);
+
+
+    printf("Seu estado é: %c\n", Estado);
+    printf("O código da sua carta é: %c0%c\n", Estado, Codigo_Carta);
+    printf("O nome da cidade é: %s\n", Nome_Cidade);
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
