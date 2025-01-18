@@ -17,6 +17,7 @@ int main() {
     int Ponto_Turistico;
     float densidadeCidade;
     float PIBperCapta;
+    float SuperPoder;
 
     printf("Digite uma letra de  A a H para representar o Estado:\n");
     scanf("%c", &Estado);
@@ -35,7 +36,7 @@ int main() {
 
     densidadeCidade = (float) Populacao / Area;
     PIBperCapta     = (float) PIB / Populacao;
-
+    SuperPoder      = (float) Populacao + Area + PIB + Ponto_Turistico + densidadeCidade + PIBperCapta;
 
     printf("\n\n\nCódigo da carta: %c0%c\n", Estado, Codigo_Carta);
     printf("Estado: %c\n", Estado);    
@@ -45,8 +46,8 @@ int main() {
     printf("Densidade Populacional: %.2f\n", densidadeCidade);
     printf("Pontos turísticos %i\n", Ponto_Turistico);
     printf("PIB: %.2f\n", PIB);
-    printf("PIB per Capta: %.2f\n\n\n", PIBperCapta);
-    
+    printf("PIB per Capta: %.2f\n", PIBperCapta);
+    printf("Super Poder: %.2f\n\n\n", SuperPoder);
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
