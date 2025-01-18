@@ -36,15 +36,16 @@ int main() {
     densidadeCidade = (float) Populacao / Area;
     PIBperCapta     = (float) PIB / Populacao;
 
-    printf("Seu estado é: %c\n", Estado);
-    printf("Código da carta: %c0%c\n", Estado, Codigo_Carta);
+
+    printf("\n\n\nCódigo da carta: %c0%c\n", Estado, Codigo_Carta);
+    printf("Estado: %c\n", Estado);    
     printf("Nome da cidade: %s\n", Nome_Cidade);
     printf("População Total: %i\n", Populacao);
-    printf("Área: %f\n Km²", Area);
-    printf("Densidade Populacional: %f", densidadeCidade);
+    printf("Área: %.2f Km²\n", Area);
+    printf("Densidade Populacional: %.2f\n", densidadeCidade);
     printf("Pontos turísticos %i\n", Ponto_Turistico);
-    printf("PIB: %f\n", PIB);
-    printf("PIB per Capta: %f", PIBperCapta);
+    printf("PIB: %.2f\n", PIB);
+    printf("PIB per Capta: %.2f\n\n\n", PIBperCapta);
     
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
