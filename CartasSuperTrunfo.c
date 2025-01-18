@@ -27,6 +27,9 @@ int main() {
     printf("Digite a Área total da cidade escolhida:\n");
     scanf(" %f", &Area);
     printf("Digite quantos pontos turísticos há na cidade escolhida:\n");
+    scanf(" %i", &Ponto_Turistico);
+    printf("Digite o PIB da cidade escoolhida:\n");
+    scanf(" %f", &PIB);
 
 
     printf("Seu estado é: %c\n", Estado);
