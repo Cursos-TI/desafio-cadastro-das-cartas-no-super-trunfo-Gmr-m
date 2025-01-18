@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+//Meu comentário sobre o desafio, pois não entendi muito bem a finalidade. Nos foi dada a tarefa de comparar as cartas e definir os vencedores,
+//entretando para isso eu precisaria desenvolver um código especificamente para o armazenamento dos dados dessa carta e não nos foi passado a conexão com o banco de dados
+//para tal realização ou nenhuma outra maneira de executar essa tarefa, além  disso para o cadastro também precisaria utilizar estrutas condicionais e de repetição
+//como for ou while que também não foi passado até o presente momento na linguagem C, gostaria de saber se o que preparei e enviei está correto ou se de fato eu deveria
+//pesquisar por conta e entregar o desafio funcionando da forma correta como foi pedida...
+
+
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
