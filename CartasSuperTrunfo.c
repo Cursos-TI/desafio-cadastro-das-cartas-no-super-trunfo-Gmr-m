@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-adição de algumas propriedades 
-
 
 //Meu comentário sobre o desafio, pois não entendi muito bem a finalidade. Nos foi dada a tarefa de comparar as cartas e definir os vencedores,
 //entretando para isso eu precisaria desenvolver um código especificamente para o armazenamento dos dados dessa carta e não nos foi passado a conexão com o banco de dados
@@ -65,7 +63,45 @@ int main() {
     
     CartaA = SuperPoder;
 
+    //------------------------------------------------------------- CARTA B ------------------------------------------------------------------------------
 
+    printf("Digite uma letra de  A a H para representar o Estado da Carta B:\n");
+    scanf("%c", &Estado);
+    printf("Escolha um número de 1 a 4 para o código da carta:\n");
+    scanf(" %c", &Codigo_Carta);
+    printf("Digite o nome da Cidade:\n");
+    scanf(" %s", &Nome_Cidade);
+    printf("Digite a população total da cidade escolhida:\n");
+    scanf(" %i", &Populacao);
+    printf("Digite a Área total da cidade escolhida:\n");
+    scanf(" %f", &Area);
+    printf("Digite quantos pontos turísticos há na cidade escolhida:\n");
+    scanf(" %i", &Ponto_Turistico);
+    printf("Digite o PIB da cidade escolhida:\n");
+    scanf(" %f", &PIB);
+
+    densidadeCidade = (float) Populacao / Area;
+    PIBperCapta     = (float) PIB / Populacao;
+    SuperPoder      = (float) Populacao + Area + PIB + Ponto_Turistico + densidadeCidade + PIBperCapta;
+
+    printf("\n\n\nCódigo da carta: %c0%c\n", Estado, Codigo_Carta);
+    printf("Estado: %c\n", Estado);    
+    printf("Nome da cidade: %s\n", Nome_Cidade);
+    printf("População Total: %i\n", Populacao);
+    printf("Área: %.2f Km²\n", Area);
+    printf("Densidade Populacional: %.2f\n", densidadeCidade);
+    printf("Pontos turísticos %i\n", Ponto_Turistico);
+    printf("PIB: %.2f\n", PIB);
+    printf("PIB per Capta: %.2f\n", PIBperCapta);
+    printf("Super Poder: %.2f\n\n\n", SuperPoder);
+
+    CartaB = SuperPoder;
+
+    if (CartaA > CartaB){
+        printf("Carta A é a vencedora");
+    }   else{
+        printf("A carta B é vencedora");
+    }
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
