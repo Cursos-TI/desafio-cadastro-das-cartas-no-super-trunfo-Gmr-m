@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+adição de algumas propriedades 
+
+
 //Meu comentário sobre o desafio, pois não entendi muito bem a finalidade. Nos foi dada a tarefa de comparar as cartas e definir os vencedores,
 //entretando para isso eu precisaria desenvolver um código especificamente para o armazenamento dos dados dessa carta e não nos foi passado a conexão com o banco de dados
 //para tal realização ou nenhuma outra maneira de executar essa tarefa, além  disso para o cadastro também precisaria utilizar estrutas condicionais e de repetição
@@ -25,8 +28,12 @@ int main() {
     float densidadeCidade;
     float PIBperCapta;
     float SuperPoder;
+    float CartaA;
+    float CartaB;
+    
 
-    printf("Digite uma letra de  A a H para representar o Estado:\n");
+
+    printf("Digite uma letra de  A a H para representar o Estado da Carta A:\n");
     scanf("%c", &Estado);
     printf("Escolha um número de 1 a 4 para o código da carta:\n");
     scanf(" %c", &Codigo_Carta);
@@ -56,6 +63,9 @@ int main() {
     printf("PIB per Capta: %.2f\n", PIBperCapta);
     printf("Super Poder: %.2f\n\n\n", SuperPoder);
     
+    CartaA = SuperPoder;
+
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
