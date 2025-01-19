@@ -32,7 +32,7 @@ int main() {
 
 
     printf("Digite uma letra de  A a H para representar o Estado da Carta A:\n");
-    scanf("%c", &Estado);
+    scanf(" %c", &Estado);
     printf("Escolha um número de 1 a 4 para o código da carta:\n");
     scanf(" %c", &Codigo_Carta);
     printf("Digite o nome da Cidade:\n");
@@ -66,7 +66,7 @@ int main() {
     //------------------------------------------------------------- CARTA B ------------------------------------------------------------------------------
 
     printf("Digite uma letra de  A a H para representar o Estado da Carta B:\n");
-    scanf("%c", &Estado);
+    scanf(" %c", &Estado);
     printf("Escolha um número de 1 a 4 para o código da carta:\n");
     scanf(" %c", &Codigo_Carta);
     printf("Digite o nome da Cidade:\n");
@@ -98,10 +98,10 @@ int main() {
     CartaB = SuperPoder;
 
     if (CartaA > CartaB){
-        printf("Carta A é a vencedora");
+        printf("Carta A é a vencedora\n\n\n\n");
     }   else{
-        printf("A carta B é vencedora");
-    }
+        printf("A carta B é vencedora\n\n\n\n");
+    };
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
