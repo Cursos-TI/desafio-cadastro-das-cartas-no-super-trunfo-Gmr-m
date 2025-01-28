@@ -132,8 +132,7 @@ int main() {
 
         case 3:  
             condicao = 2;
-            printf("O jogo está sendo encerrado!!!\n\n\n\n");   
-            
+            printf("O jogo está sendo encerrado!!!\n\n\n\n");              
             break;
             
 
