@@ -29,106 +29,119 @@ int main() {
     float CartaA;
     float CartaB;
     int opcao;
+    int condicao;
 
-    printf("Escolha uma opção:\n");
-    printf("1. Jogar\n");
-    printf("2. Ver regras\n");
-    printf("3. Sair do Jogo\n");
-    scanf(" %d", &opcao);
+    condicao = 1;
 
-    switch (opcao)
-    {
-    case 1:
+   
 
-        printf("Digite uma letra de  A a H para representar o Estado da Carta A:\n");
-        scanf(" %c", &Estado);
-        printf("Escolha um número de 1 a 4 para o código da carta:\n");
-        scanf(" %c", &Codigo_Carta);
-        printf("Digite o nome da Cidade:\n");
-        scanf(" %s", &Nome_Cidade);
-        printf("Digite a população total da cidade escolhida:\n");
-        scanf(" %i", &Populacao);
-        printf("Digite a Área total da cidade escolhida:\n");
-        scanf(" %f", &Area);
-        printf("Digite quantos pontos turísticos há na cidade escolhida:\n");
-        scanf(" %i", &Ponto_Turistico);
-        printf("Digite o PIB da cidade escolhida:\n");
-        scanf(" %f", &PIB);
+    while (condicao == 1){
 
-        densidadeCidade = (float) Populacao / Area;
-        PIBperCapta     = (float) PIB / Populacao;
-        SuperPoder      = (float) Populacao + Area + PIB + Ponto_Turistico + densidadeCidade + PIBperCapta;
+        printf("Escolha uma opção:\n");
+        printf("1. Jogar\n");
+        printf("2. Ver regras\n");
+        printf("3. Sair do Jogo\n");
+        printf("Escolha uma opção: ");
+        scanf(" %d", &opcao);
+    
+        switch (opcao)
+        {
+                
+        case 1:
 
-        printf("\n\n\nCódigo da carta: %c0%c\n", Estado, Codigo_Carta);
-        printf("Estado: %c\n", Estado);    
-        printf("Nome da cidade: %s\n", Nome_Cidade);
-        printf("População Total: %i\n", Populacao);
-        printf("Área: %.2f Km²\n", Area);
-        printf("Densidade Populacional: %.2f\n", densidadeCidade);
-        printf("Pontos turísticos %i\n", Ponto_Turistico);
-        printf("PIB: %.2f\n", PIB);
-        printf("PIB per Capta: %.2f\n", PIBperCapta);
-        printf("Super Poder: %.2f\n\n\n", SuperPoder);
-        
-        CartaA = SuperPoder;
+            printf("Digite uma letra de  A a H para representar o Estado da Carta A:\n");
+            scanf(" %c", &Estado);
+            printf("Escolha um número de 1 a 4 para o código da carta:\n");
+            scanf(" %c", &Codigo_Carta);
+            printf("Digite o nome da Cidade:\n");
+            scanf(" %s", &Nome_Cidade);
+            printf("Digite a população total da cidade escolhida:\n");
+            scanf(" %i", &Populacao);
+            printf("Digite a Área total da cidade escolhida:\n");
+            scanf(" %f", &Area);
+            printf("Digite quantos pontos turísticos há na cidade escolhida:\n");
+            scanf(" %i", &Ponto_Turistico);
+            printf("Digite o PIB da cidade escolhida:\n");
+            scanf(" %f", &PIB);
 
-        //------------------------------------------------------------- CARTA B ------------------------------------------------------------------------------
+            densidadeCidade = (float) Populacao / Area;
+            PIBperCapta     = (float) PIB / Populacao;
+            SuperPoder      = (float) Populacao + Area + PIB + Ponto_Turistico + densidadeCidade + PIBperCapta;
 
-        printf("Digite uma letra de  A a H para representar o Estado da Carta B:\n");
-        scanf(" %c", &Estado);
-        printf("Escolha um número de 1 a 4 para o código da carta:\n");
-        scanf(" %c", &Codigo_Carta);
-        printf("Digite o nome da Cidade:\n");
-        scanf(" %s", &Nome_Cidade);
-        printf("Digite a população total da cidade escolhida:\n");
-        scanf(" %i", &Populacao);
-        printf("Digite a Área total da cidade escolhida:\n");
-        scanf(" %f", &Area);
-        printf("Digite quantos pontos turísticos há na cidade escolhida:\n");
-        scanf(" %i", &Ponto_Turistico);
-        printf("Digite o PIB da cidade escolhida:\n");
-        scanf(" %f", &PIB);
+            printf("\n\n\nCódigo da carta: %c0%c\n", Estado, Codigo_Carta);
+            printf("Estado: %c\n", Estado);    
+            printf("Nome da cidade: %s\n", Nome_Cidade);
+            printf("População Total: %i\n", Populacao);
+            printf("Área: %.2f Km²\n", Area);
+            printf("Densidade Populacional: %.2f\n", densidadeCidade);
+            printf("Pontos turísticos %i\n", Ponto_Turistico);
+            printf("PIB: %.2f\n", PIB);
+            printf("PIB per Capta: %.2f\n", PIBperCapta);
+            printf("Super Poder: %.2f\n\n\n", SuperPoder);
+            
+            CartaA = SuperPoder;
 
-        densidadeCidade = (float) Populacao / Area;
-        PIBperCapta     = (float) PIB / Populacao;
-        SuperPoder      = (float) Populacao + Area + PIB + Ponto_Turistico + densidadeCidade + PIBperCapta;
+            //------------------------------------------------------------- CARTA B ------------------------------------------------------------------------------
 
-        printf("\n\n\nCódigo da carta: %c0%c\n", Estado, Codigo_Carta);
-        printf("Estado: %c\n", Estado);    
-        printf("Nome da cidade: %s\n", Nome_Cidade);
-        printf("População Total: %i\n", Populacao);
-        printf("Área: %.2f Km²\n", Area);
-        printf("Densidade Populacional: %.2f\n", densidadeCidade);
-        printf("Pontos turísticos %i\n", Ponto_Turistico);
-        printf("PIB: %.2f\n", PIB);
-        printf("PIB per Capta: %.2f\n", PIBperCapta);
-        printf("Super Poder: %.2f\n\n\n", SuperPoder);
+            printf("Digite uma letra de  A a H para representar o Estado da Carta B:\n");
+            scanf(" %c", &Estado);
+            printf("Escolha um número de 1 a 4 para o código da carta:\n");
+            scanf(" %c", &Codigo_Carta);
+            printf("Digite o nome da Cidade:\n");
+            scanf(" %s", &Nome_Cidade);
+            printf("Digite a população total da cidade escolhida:\n");
+            scanf(" %i", &Populacao);
+            printf("Digite a Área total da cidade escolhida:\n");
+            scanf(" %f", &Area);
+            printf("Digite quantos pontos turísticos há na cidade escolhida:\n");
+            scanf(" %i", &Ponto_Turistico);
+            printf("Digite o PIB da cidade escolhida:\n");
+            scanf(" %f", &PIB);
 
-        CartaB = SuperPoder;
+            densidadeCidade = (float) Populacao / Area;
+            PIBperCapta     = (float) PIB / Populacao;
+            SuperPoder      = (float) Populacao + Area + PIB + Ponto_Turistico + densidadeCidade + PIBperCapta;
 
-        if (CartaA > CartaB){
-            printf("Carta A é a vencedora\n\n\n\n");
-        }   else if (CartaA == CartaB){
-            printf("O jogo empatou\n\n\n\n");
-        } else{
-            printf("A carta B é vencedora\n\n\n\n");
-        };    
-        break;
+            printf("\n\n\nCódigo da carta: %c0%c\n", Estado, Codigo_Carta);
+            printf("Estado: %c\n", Estado);    
+            printf("Nome da cidade: %s\n", Nome_Cidade);
+            printf("População Total: %i\n", Populacao);
+            printf("Área: %.2f Km²\n", Area);
+            printf("Densidade Populacional: %.2f\n", densidadeCidade);
+            printf("Pontos turísticos %i\n", Ponto_Turistico);
+            printf("PIB: %.2f\n", PIB);
+            printf("PIB per Capta: %.2f\n", PIBperCapta);
+            printf("Super Poder: %.2f\n\n\n", SuperPoder);
 
-    case 2:
-        printf("Você deverá informar os status de sua carta para que seja realizada a comparação\n");
-        printf("com as cartas do oponente\n\n\n\n");       
-        break;
+            CartaB = SuperPoder;
 
-    case 3: 
-        printf("O jogo está sendo encerrado!!!\n\n\n\n");    
-        break;
+            if (CartaA > CartaB){
+                printf("Carta A é a vencedora\n\n\n\n");
+            }   else if (CartaA == CartaB){
+                printf("O jogo empatou\n\n\n\n");
+            } else{
+                printf("A carta B é vencedora\n\n\n\n");
+            };    
+            break;
 
-    default:
-        printf("Opção inválida!\n\n\n\n");
-        break;
+        case 2:
+            printf("Você deverá informar os status de sua carta para que seja realizada a comparação\n");
+            printf("com as cartas do oponente\n\n\n\n");     
+            opcao = 0;  
+            break;
+
+        case 3:  
+            printf(" %d\n", condicao);
+            printf("O jogo está sendo encerrado!!!\n\n\n\n");   
+            
+            break;
+            
+
+        default:
+            printf("Opção inválida!\n\n\n\n");
+            break;
+        }
     }
-
 
 
 
