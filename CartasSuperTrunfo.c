@@ -59,8 +59,7 @@ int main() {
 
     while (condicao == 1){
 
-        printf("Escolha uma opção:\n");
-        printf("1. Jogar\n");
+        printf("\n1. Jogar\n");
         printf("2. Ver regras\n");
         printf("3. Sair do Jogo\n");
         printf("Escolha uma opção: ");
@@ -71,10 +70,10 @@ int main() {
                 
         case 1:
 
-            printf("\n\n\nEscolha uma opção:\n");
-            printf("1. Modo normal\n");
-            printf("2. Comparar todos os atributosn\n");
-            printf("3. Voltar");
+            printf("\n\n1. Modo normal\n");
+            printf("2. Comparar todos os atributos\n");
+            printf("3. Voltar\n");
+            printf("Escolha uma opção: ");
             scanf(" %d", &opcao2);
 
             switch (opcao2)
@@ -256,17 +255,18 @@ int main() {
 
                 opcao1 = 0;
 
-            break;
+                break;
 
             case 3:
                 opcao1 = 0;
+                break;
 
             default:
                 printf("Opção Inválida!!!");
                 break;
             }
 
-
+            break;
 
         case 2:
             printf("Você deverá informar os status de sua carta para que seja realizada a comparação\n");
