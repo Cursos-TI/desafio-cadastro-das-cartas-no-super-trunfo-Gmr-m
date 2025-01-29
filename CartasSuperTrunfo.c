@@ -38,6 +38,16 @@ int main() {
     float SuperPoder1;
     float CartaA;
     float CartaB;
+    int rPopulacao;
+    float rArea;
+    float rPIB;
+    int rPonto_Turistico;
+    float rdensidade;
+    float rPIBPER;
+    float rSPPD;
+    float rFinal;
+
+
 
     int opcao1;
     int opcao2;
@@ -65,6 +75,7 @@ int main() {
             printf("1. Modo normal\n");
             printf("2. Comparar todos os atributosn\n");
             printf("3. Voltar");
+            scanf(" %d", &opcao2);
 
             switch (opcao2)
             {
@@ -143,7 +154,7 @@ int main() {
                 } else{
                     printf("A carta B é vencedora\n\n\n\n");
                 }; 
-                condicao = 2;   
+                opcao1 = 0;   
 
                 break;
 
@@ -151,7 +162,7 @@ int main() {
 
             //---------------------------------------------------------------- CASO 2 -------------------------------------------------------------------------------
 
-            printf("Digite uma letra de  A a H para representar o Estado da Carta A:\n");
+                printf("Digite uma letra de  A a H para representar o Estado da Carta A:\n");
                 scanf(" %c", &Estado1);
                 printf("Escolha um número de 1 a 4 para o código da carta:\n");
                 scanf(" %c", &Codigo_Carta1);
@@ -216,11 +227,23 @@ int main() {
                 printf("Super Poder: %.2f\n\n\n", SuperPoder2);
 
                 CartaB = SuperPoder2;
-                
-                
 
+                rPopulacao       = Populacao1 - Populacao2;
+                rArea            = Area1 - Area2;
+                rdensidade       = densidadeCidade1 - densidadeCidade2;
+                rPonto_Turistico = Ponto_Turistico1 - Ponto_Turistico2;
+                rPIB             = PIB1 - PIB2;
+                rPIBPER          = PIBperCapta1 - PIBperCapta2;
+                rFinal           = CartaA - CartaB;   
 
-
+                printf("Carta A -> Carta B\n");
+                printf("População: %d -> %d ==> %d\n", Populacao1, Populacao2, rPopulacao);
+                printf("Área: %.2f -> %.2f ==> %.2f\n", Area1, Area2, rArea);
+                printf("Densidade: %.2f -> %.2f ==> %.2f\n", densidadeCidade1, densidadeCidade2, rdensidade);
+                printf("Ponto Turístico: %i -> %i ==> %i\n", Ponto_Turistico1, Ponto_Turistico2, rPonto_Turistico);
+                printf("PIB: %.2f -> %.2f ==> %.2f\n", PIB1, PIB2, rPIB);
+                printf("PIB per Capta: %.2f -> %.2f ==> %.2f\n", PIBperCapta1, PIBperCapta2, rPIBPER);
+                printf("Super Poder: %.2f -> %.2f ==> %.2f", SuperPoder1, SuperPoder2, rFinal);
 
 
                 if (CartaA > CartaB){
@@ -231,9 +254,15 @@ int main() {
                     printf("A carta B é vencedora\n\n\n\n");
                 };
 
+                opcao1 = 0;
+
             break;
 
+            case 3:
+                opcao1 = 0;
+
             default:
+                printf("Opção Inválida!!!");
                 break;
             }
 
