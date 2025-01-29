@@ -242,7 +242,7 @@ int main() {
                 printf("Ponto Turístico: %i -> %i ==> %i\n", Ponto_Turistico1, Ponto_Turistico2, rPonto_Turistico);
                 printf("PIB: %.2f -> %.2f ==> %.2f\n", PIB1, PIB2, rPIB);
                 printf("PIB per Capta: %.2f -> %.2f ==> %.2f\n", PIBperCapta1, PIBperCapta2, rPIBPER);
-                printf("Super Poder: %.2f -> %.2f ==> %.2f", SuperPoder1, SuperPoder2, rFinal);
+                printf("Super Poder: %.2f -> %.2f ==> %.2f\n", SuperPoder1, SuperPoder2, rFinal);
 
 
                 if (CartaA > CartaB){
